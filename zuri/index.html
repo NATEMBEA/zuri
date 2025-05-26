@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuri Kilifi - Luxury Beachfront Villa in Kiwandani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0, 119, 182, 0.8) 0%, rgba(0, 180, 216, 0.8) 100%);
+        }
+        .amenity-icon {
+            transition: all 0.3s ease;
+        }
+        .amenity-icon:hover {
+            transform: scale(1.1);
+            color: #0077b6;
+        }
+        .gallery-image {
+            transition: all 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+        .booking-card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .booking-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-umbrella-beach text-3xl text-blue-600 mr-2"></i>
+                        <span class="text-xl font-bold text-blue-600">ZURI KILIFI</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition">Gallery</a>
+                    <a href="#amenities" class="text-gray-700 hover:text-blue-600 transition">Amenities</a>
+                    <a href="#location" class="text-gray-700 hover:text-blue-600 transition">Location</a>
+                    <a href="#booking" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Book Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+        <img src="./img/1 (1).jpeg" alt="Zuri Kilifi Beachfront" class="absolute inset-0 w-full h-full object-cover">
+        <div class="hero-gradient absolute inset-0"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Zuri Apartments</h1>
+            <p class="text-xl md:text-2xl text-white mb-8">Luxury accommodation in the heart of Kilifi Kiwandani</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#booking" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Check Availability</a>
+                <a href="#gallery" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">View Gallery</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#about" class="text-white animate-bounce">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Welcome to Zuri Kilifi</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Experience coastal luxury like never before at our exquisite apartment near the beach in Kilifi Kiwandani.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="./img/1 (1).jpeg" alt="Zuri Villa" class="rounded-xl shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Your Perfect Coastal Getaway</h3>
+                    <p class="text-gray-600 mb-6">Zuri Kilifi is a stunning (2,1 and studio)-bedroom apartment that combines modern luxury with authentic coastal charm. Located just moments from the beach, our apartment offers breathtaking ocean views, easy beach access, and world-class amenities</p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-bed text-blue-600 mr-3 text-xl"></i>
+                            <span class="text-gray-700">2 Bedrooms</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-bath text-blue-600 mr-3 text-xl"></i>
+                            <span class="text-gray-700">1 Bathrooms</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-blue-600 mr-3 text-xl"></i>
+                            <span class="text-gray-700">Sleeps 8</span>
+                        </div>
+                         <div class="flex items-center"> 
+                             <i class="fas fa-pool-table text-blue-600 mr-3 text-xl"></i> 
+                            <span class="text-gray-700">Private Pool</span>
+                        </div> 
+                    </div>
+                    <a href="#gallery" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition">
+                        Explore More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Gallery</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Take a visual journey through our stunning property and its breathtaking surroundings.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-image overflow-hidden rounded-xl shadow-md">
+                    <img src="./img/WhatsApp Image 2025-05-26 at 01.12.49 (1).jpeg" alt="Living Area" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-md">
+                    <img src="./img/WhatsApp Image 2025-05-26 at 01.12.49.jpeg" alt="Master Bedroom" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-md">
+                    <img src="./img/WhatsApp Image 2025-05-26 at 01.12.50 (1).jpeg" alt="Kitchen" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-md">
+                    <img src="./img/WhatsApp Image 2025-05-26 at 01.12.50.jpeg" alt="Beach View" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-md">
+                    <img src="./img/WhatsApp Image 2025-05-26 at 01.12.51.jpeg" alt="Pool Area" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-md">
+                    <img src="./img/WhatsApp Image 2025-05-26 at 01.12.52.jpeg" alt="Dining Area" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition">
+                    View Full Gallery <i class="fas fa-images ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Amenities & Services</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We provide everything you need for an unforgettable stay at Zuri Kilifi.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <div class="amenity-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">High-Speed WiFi</h3>
+                    <p class="text-gray-600">Stay connected with our ultra-fast internet</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <!-- <div class="amenity-icon text-blue-600 text-4xl mb-4"> -->
+                        <!-- <i class="fas fa-swimming-pool"></i> -->
+                    <!-- </div> -->
+                    <!-- <h3 class="text-lg font-semibold text-gray-800 mb-2">Infinity Pool</h3> -->
+                    <!-- <p class="text-gray-600">Private pool with ocean views</p> -->
+                     <div class="amenity-icon mb-4">
+    <div class="w-24 h-24 rounded-lg overflow-hidden mb-3 mx-auto">
+        <img 
+            src="./img/pool.webp" alt="Infinity Pool"
+    class="w-full h-full object-cover">
+        
+    </div>
+</div>
+                </div> 
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <div class="amenity-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Private Beach</h3>
+                    <p class="text-gray-600">Direct access to pristine beaches</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <div class="amenity-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Daily Housekeeping</h3>
+                    <p class="text-gray-600">Professional cleaning service</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <div class="amenity-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Fully Equipped Kitchen</h3>
+                    <p class="text-gray-600">Modern appliances and cookware</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <div class="amenity-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Secure Parking</h3>
+                    <p class="text-gray-600">Private parking space</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <div class="amenity-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Smart TV</h3>
+                    <p class="text-gray-600">Entertainment with streaming</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-gray-50 hover:bg-blue-50 transition">
+                    <div class="amenity-icon text-blue-600 text-4xl mb-4">
+                        <i class="fa-solid fa-air-conditioner"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Air Conditioning</h3>
+                    <p class="text-gray-600">Climate control in all rooms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Location</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover the beauty of Kilifi Kiwandani from our prime beachfront location.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="rounded-xl overflow-hidden shadow-xl h-96">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.8181799999996!2d39.849215!3d-3.63065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzcnNTA2LjQiUyAzOcKwNTAnNTcuMiJF!5e1!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Zuri Kilifi - Kiwandani</h3>
+                    <p class="text-gray-600 mb-6">Our apartment is strategically located in the prestigious Kiwandani area of Kilifi, offering the perfect blend of privacy and convenience. Just a short distance from Kilifi town center, you'll enjoy easy access to local attractions while being secluded enough for a peaceful retreat.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Address</p>
+                                <p class="text-gray-600">Kiwandani Beach Road, Kilifi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-plane text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Nearest Airport</p>
+                                <p class="text-gray-600">Malindi International Airport - 45 min drive</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-utensils text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Nearby Attractions</p>
+                                <p class="text-gray-600">Kilifi Creek,Kusini Tavern, Distant Relatives Ecolodge, Mnarani Ruins</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Guests Say</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear from our satisfied guests.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Sarah J.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Zuri Kilifi exceeded all our expectations! The villa is even more beautiful in person, and the beachfront location is absolutely magical. We loved waking up to the sound of the waves every morning."</p>
+                </div>
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael T.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Michael T.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The perfect family vacation spot! Our kids loved the pool and beach access, while we appreciated the modern amenities and comfortable bedrooms. Dr. Masha was incredibly helpful throughout our stay."</p>
+                </div>
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina K.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Amina K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"We celebrated our anniversary at Zuri and it was perfect. The sunset views from the terrace are unforgettable. The villa is beautifully designed with attention to every detail. We'll definitely be back!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Zuri Kilifi?</h2>
+                    <p class="text-lg mb-8">Contact us today to check availability or book your dream coastal getaway. Our team is ready to assist you with any questions you may have about your stay.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Call us directly</p>
+                                <p class="text-lg">0750 450254 (Dr. Masha)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Email us</p>
+                                <p class="text-lg">bookings@zurikilifi.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Availability</p>
+                                <p class="text-lg">Year-round bookings available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-card bg-white rounded-xl p-8 text-gray-800">
+                    <h3 class="text-2xl font-bold mb-6">Check Availability</h3>
+                    <form onsubmit="return sendWhatsAppMessage(event)">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="check-in" class="block text-sm font-medium text-gray-700 mb-1">Check-in</label>
+                                <input type="date" id="check-in" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="check-out" class="block text-sm font-medium text-gray-700 mb-1">Check-out</label>
+                                <input type="date" id="check-out" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="guests" class="block text-sm font-medium text-gray-700 mb-1">Guests</label>
+                                <select id="guests" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                    <option>1 guest</option>
+                                    <option>2 guests</option>
+                                    <option>3 guests</option>
+                                    <option>4 guests</option>
+                                    <option>5+ guests</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="nights" class="block text-sm font-medium text-gray-700 mb-1">Nights</label>
+                                <select id="nights" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                    <option>1 night</option>
+                                    <option>2 nights</option>
+                                    <option>3 nights</option>
+                                    <option>4 nights</option>
+                                    <option>5+ nights</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Check Availability via WhatsApp
+                        </button>
+                    </form>
+                    <script>
+                    function sendWhatsAppMessage(event) {
+                        event.preventDefault();
+                        const checkIn = document.getElementById('check-in').value;
+                        const checkOut = document.getElementById('check-out').value;
+                        const guests = document.getElementById('guests').value;
+                        const nights = document.getElementById('nights').value;
+                        const phone = '254750450254';
+                        const message = `Hello, I would like to check availability at Zuri Kilifi.%0A%0ACheck-in: ${checkIn}%0ACheck-out: ${checkOut}%0AGuests: ${guests}%0ANights: ${nights}`;
+                        window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+                        return false;
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Have questions about your stay at Zuri Kilifi? Reach out to us anytime.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Get in Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Address</h4>
+                                <p class="text-gray-600">Kiwandani Beach Road, Kilifi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Phone</h4>
+                                <p class="text-gray-600">0750 450254 (Dr. Masha)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">bookings@zurikilifi.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-clock text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Office Hours</h4>
+                                <p class="text-gray-600">Monday - Sunday: 8:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-medium text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send Message via WhatsApp</h3>
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <p class="mb-4 text-gray-700">Get instant responses by messaging us directly on WhatsApp:</p>
+                            <a href="https://wa.me/254750450254" 
+                               class="inline-flex items-center justify-center w-full bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition">
+                                <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                                Chat Now on WhatsApp
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Zuri Kilifi</h3>
+                    <p class="text-gray-400">Luxury beachfront villa accommodation in Kilifi Kiwandani, Kenya.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="#amenities" class="text-gray-400 hover:text-white transition">Amenities</a></li>
+                        <li><a href="#location" class="text-gray-400 hover:text-white transition">Location</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>Kiwandani Beach Road, Kilifi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>0750 450254 (Dr. Masha)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                            <span>bookings@zurikilifi.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for special offers and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Zuri Kilifi. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/254750450254" class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle (could be expanded)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('nav button');
+            const mobileMenu = document.querySelector('.md\\:hidden + .mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                if (mobileMenu) {
+                    mobileMenu.classList.toggle('hidden');
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Booking form validation (basic example)
+            const bookingForm = document.querySelector('#booking form');
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const checkIn = document.getElementById('check-in').value;
+                    const checkOut = document.getElementById('check-out').value;
+                    
+                    if (!checkIn || !checkOut) {
+                        alert('Please select both check-in and check-out dates');
+                        return;
+                    }
+                    
+                    // In a real implementation, you would send this data to your booking system
+                    alert('Availability request submitted! We will contact you shortly.');
+                    this.reset();
+                });
+            }
+            
+            // Contact form validation (basic example)
+            const contactForm = document.querySelector('#contact form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+                    
+                    if (!name || !email || !message) {
+                        alert('Please fill in all required fields');
+                        return;
+                    }
+                    
+                    // In a real implementation, you would send this data to your server
+                    alert('Message sent successfully! We will get back to you soon.');
+                    this.reset();
+                });
+            }
+        });
+
+function sendWhatsAppMessage(event) {
+    event.preventDefault();
+    
+    // Get form values
+    const checkIn = document.getElementById('check-in').value;
+    const checkOut = document.getElementById('check-out').value;
+    const guests = document.getElementById('guests').value;
+    const nights = document.getElementById('nights').value;
+
+    // Create WhatsApp message
+    const message = `Hello Zuri Kilifi! I want to check availability:
+    - Check-in: ${checkIn}
+    - Check-out: ${checkOut}
+    - Guests: ${guests}
+    - Nights: ${nights}`;
+
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Your WhatsApp number (format: 254700000000 without + or 0)
+    const whatsappNumber = '254750450254';
+    
+    // Create WhatsApp link
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+    
+    return false;
+}
+
+
+    </script>
+</body>
+</html>
